@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/statefull.dart';
 import 'package:flutter_application_1/stateless.dart';
 
+import 'loginpage.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -12,9 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Widget Types",
+      title: "W07-Lab-App",
       theme: ThemeData(primarySwatch: Colors.green),
-      home: HomePage2(),
+      home: LoginPage(),
     );
   }
 }
