@@ -50,24 +50,26 @@ class LoginPage extends StatelessWidget {
       ),
     );
 
-    return Padding(
-      padding: const EdgeInsets.all(15.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ClipRRect(
-              borderRadius: BorderRadius.circular(200),
-              child: Image.asset(
-                "assets/images/login.jpg",
-                width: 150,
-              )),
-          SizedBox(height: 15),
-          txtUserName,
-          SizedBox(height: 15),
-          txtPassword,
-          SizedBox(height: 15),
-          btnLogin
-        ],
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ClipRRect(
+                borderRadius: BorderRadius.circular(200),
+                child: Image.asset(
+                  "assets/images/login.jpg",
+                  width: 150,
+                )),
+            SizedBox(height: 15),
+            txtUserName,
+            SizedBox(height: 15),
+            txtPassword,
+            SizedBox(height: 15),
+            btnLogin,
+          ],
+        ),
       ),
     );
   }
